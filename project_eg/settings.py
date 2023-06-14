@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'app_eg.apps.AppEgConfig',
     'goroscope.apps.GoroscopeConfig',
+    'week_days.apps.WeekDaysConfig',
 
 ]
 

@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from week_days.views import day_of_week
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app_eg.urls')),
     path('goroscope/', include('goroscope.urls')),
+    path('day/<day>', day_of_week)
 
 ]
