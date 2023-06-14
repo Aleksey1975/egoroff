@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'app_eg.apps.AppEgConfig',
+    'goroscope.apps.GoroscopeConfig',
 
 ]
 
