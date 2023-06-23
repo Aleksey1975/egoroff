@@ -1,10 +1,15 @@
 {% extends 'goroscope/base.html' %}
-
+{% load my_filter %}
 {% block title %}
 {{ title }}
 {% endblock %}
 
 
 {% block content %}
-{{ title }}
+
+
+{% for sing, descr in sings.items %}
+<h4><a href="{% url 'sing_slug' sing_slug=sing %}">{{ descr|my_split }}</a></h4>
+
+{% endfor %}
 {% endblock %}

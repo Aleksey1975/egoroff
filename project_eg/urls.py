@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app_eg.urls')),
     path('goroscope/', include('goroscope.urls')),
-    path('day/<day>', day_of_week)
+    path('day/', include('week_days.urls')),
+    path('calculate_geometry/', include('geometry.urls')),
 
 ]

@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'goroscope/base.html' %}
+{% load my_filter %}
+
+{% block title %}
+{{ title|my_upper:'3' }}
+{% endblock %}
+
+
+{% block content %}
+<h3>{{ sing|my_split }}</h3>
+{{ sing }}
+
+{% endblock %}
